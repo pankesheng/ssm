@@ -15,7 +15,7 @@
   */  
 //demo1:单条折线图（加载txt文件）*************  
 //expressInstall.swf:flashplayer检查程序，作用是如果没有浏览器flash插件，则提示安装  
-
+//直接配置请求url的话  url上的&要用  %26 代替
 swfobject.embedSWF("<%=request.getContextPath() %>/ofc/open-flash-chart.swf", "OpenFlashChartContainer1", "240", "160","9.0.0", "<%=request.getContextPath() %>/ofc/expressInstall.swf",{"data-file":"<%=request.getContextPath() %>/chartdata.txt"});  
 
   
