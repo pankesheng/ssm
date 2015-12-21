@@ -28,9 +28,9 @@ public class CodeWrite {
 		beanMap.put("t_unit", "Unit");
 		
 		
-		CodeMySql.printCode(map, dbType, sqlPath);
-		CodeMyMapperAndXml.printCode(map, beanMap, dbType, filepath,entityPath,mapperPath, basicMapperPath,basicRepositoryPath);
-		CodeMyServiceAndImpl.printCode(map, beanMap, filepath, entityPath, mapperPath, servicePath, basicServicePath, basicServiceImplPath);
+		GenSql.printCode(map, dbType, sqlPath);
+		GenMapper.printCode(map, beanMap, dbType, filepath,entityPath,mapperPath, basicMapperPath,basicRepositoryPath);
+		GenService.printCode(map, beanMap, filepath, entityPath, mapperPath, servicePath, basicServicePath, basicServiceImplPath);
 		
 		map = new HashMap<String, Class<?>>();
 		beanMap = new HashMap<String, String>();
@@ -39,6 +39,6 @@ public class CodeWrite {
 		sqlPath = "F://ssm//sql//article.sql";
 		NoDBfieldCodeMySql.printCode(map, dbType, sqlPath);
 		NoDBfieldCodeMyMapperAndXml.printCode(map, beanMap, dbType, filepath, entityPath, mapperPath, basicMapperPath,basicRepositoryPath);
-		CodeMyServiceAndImpl.printCode(map, beanMap, filepath, entityPath, mapperPath, servicePath, basicServicePath, basicServiceImplPath);
+		GenService.printCode(map, beanMap, filepath, entityPath, mapperPath, servicePath, basicServicePath, basicServiceImplPath);
 	}
 }

@@ -4,7 +4,7 @@ import java.util.Iterator;
 import java.util.Map;
 import java.util.Set;
 
-public class CodeMyServiceAndImpl {
+public class GenService {
 	
 	@SuppressWarnings("rawtypes")
 	public static void printCode(Map<String, Class<?>> map,Map<String, String> beanMap,String filepath,String entityPath,String mapperPath,String servicePath,String basicServicePath,String basicServiceImplPath) {

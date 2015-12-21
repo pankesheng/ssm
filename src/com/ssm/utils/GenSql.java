@@ -7,7 +7,7 @@ import java.util.Set;
 
 import org.apache.commons.lang3.StringUtils;
 
-public class CodeMySql {
+public class GenSql {
 
 	//实体属性必须要加上 dbfield注解
 	public static void printCode(Map<String, Class<?>> map,String dbType,String sqlPath) {

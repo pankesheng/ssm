@@ -7,7 +7,7 @@ import java.util.Set;
 
 import org.apache.commons.lang3.StringUtils;
 
-public class CodeMyMapperAndXml {
+public class GenMapper {
 	
 	public static void printCode(Map<String, Class<?>> map,Map<String, String> beanMap,String dbType,String filepath,String entityPath,String mapperPath,String basicMapperPath, String basicRepositoryPath) {
 		if(dbType.equals("mysql")){
