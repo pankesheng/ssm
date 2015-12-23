@@ -12,7 +12,7 @@ import org.apache.commons.lang3.StringUtils;
  *
  */
 
-public class NoDBfieldCodeMyMapperAndXml {
+public class GenMapper2 {
 	
 	public static void printCode(Map<String, Class<?>> map,Map<String, String> beanMap,String dbType,String filepath,String entityPath,String mapperPath,String basicMapperPath, String basicRepositoryPath) {
 		if(dbType.equals("mysql")){

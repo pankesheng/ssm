@@ -37,8 +37,8 @@ public class CodeWrite {
 		map.put("t_article", Article.class);
 		beanMap.put("t_article", "Article");
 		sqlPath = "F://ssm//sql//article.sql";
-		NoDBfieldCodeMySql.printCode(map, dbType, sqlPath);
-		NoDBfieldCodeMyMapperAndXml.printCode(map, beanMap, dbType, filepath, entityPath, mapperPath, basicMapperPath,basicRepositoryPath);
+		GenSql2.printCode(map, dbType, sqlPath);
+		GenMapper2.printCode(map, beanMap, dbType, filepath, entityPath, mapperPath, basicMapperPath,basicRepositoryPath);
 		GenService.printCode(map, beanMap, filepath, entityPath, mapperPath, servicePath, basicServicePath, basicServiceImplPath);
 	}
 }
