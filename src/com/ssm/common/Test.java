@@ -44,6 +44,7 @@ public class Test {
 		System.out.println("周四："+sdf.format(zhousiDate));
 		System.out.println("周五："+sdf.format(zhouwuDate));
 		System.out.println("周六："+sdf.format(zhouliuDate));
+		System.out.println("end................");
 	}
 
 }
