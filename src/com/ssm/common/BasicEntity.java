@@ -5,11 +5,6 @@ import java.io.Serializable;
 import com.ssm.utils.DBField;
 import com.zcj.util.UtilString;
 
-/**
- * 222
- * @author zouchongjin@sina.com
- * @data 2015年12月28日
- */
 public class BasicEntity  implements Serializable {
 	
 	/**
