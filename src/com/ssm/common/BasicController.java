@@ -20,6 +20,10 @@ public class BasicController {
 		binder.registerCustomEditor(Date.class, new DateEditor());
 	}
 
+
+	
+	
+	
 	public class DateEditor extends PropertyEditorSupport {
 		@Override
 		public void setAsText(String text) throws IllegalArgumentException {
