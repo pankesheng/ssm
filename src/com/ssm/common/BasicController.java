@@ -17,6 +17,7 @@ public class BasicController {
 	// 处理参数中的日期格式
 	@InitBinder
 	public void initBinder(WebDataBinder binder) {
+		System.out.println("adsfkjahsdkjfjadslkjflkadsf");
 		binder.registerCustomEditor(Date.class, new DateEditor());
 	}
 
