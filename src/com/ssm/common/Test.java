@@ -37,6 +37,11 @@ public class Test {
 		calendar.setTime(date);
 		calendar.add(Calendar.DATE,1 - (calendar.get(Calendar.DAY_OF_WEEK)-6));
 		Date zhouliuDate = calendar.getTime();
+		
+		calendar.setTime(date);
+		calendar.add(Calendar.DATE,1 - (calendar.get(Calendar.DAY_OF_WEEK)-7));
+		Date zhouriDate2 = calendar.getTime();
+		
 		System.out.println("周日："+sdf.format(zhouriDate));
 		System.out.println("周一："+sdf.format(zhouyiDate));
 		System.out.println("周二："+sdf.format(zhouerDate));
@@ -44,6 +49,7 @@ public class Test {
 		System.out.println("周四："+sdf.format(zhousiDate));
 		System.out.println("周五："+sdf.format(zhouwuDate));
 		System.out.println("周六："+sdf.format(zhouliuDate));
+		System.out.println("周日："+sdf.format(zhouriDate2));
 		System.out.println("end................");
 	}
 
